@@ -50,8 +50,21 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      gridTemplateAreas: {
+        "hero-image": [
+          "nothing empty four",
+          "nothing two four",
+          "one two four",
+          "one two five",
+          "one three five",
+          "controls three five",
+        ],
+      },
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@savvywombat/tailwindcss-grid-areas")],
 };
 export default config;
