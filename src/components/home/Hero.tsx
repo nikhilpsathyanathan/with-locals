@@ -10,20 +10,20 @@ type Props = {};
 
 function Hero({}: Props) {
   return (
-    <div className="container  mx-auto relative">
+    <div className=" relative">
       <div className="absolute h-28 w-full bottom-0 bg-white"></div>
 
-      <div className="grid grid-cols-2 gap-5 items-center relative">
-        <div className="grid gap-5">
-          <h1 className="text-magenta-dark text-[40px] font-bold leading-[48px]">
+      <div className="grid grid-cols-2 gap-5 relative container  mx-auto">
+        <div>
+          <h1 className="text-magenta-dark text-[40px] font-bold leading-[48px] mt-16">
             Enchanting experiences,
             <br /> with <span className="text-magenta">incredible locals</span>
           </h1>
-          <p className="text-xl font-medium leading-7 mb-20">
-            Book unique and memorable travel experience guided by locals
+          <p className="text-xl font-medium leading-7 mb-20 mt-4">
+            Book unique and memorable travel <br /> experience guided by locals
           </p>
 
-          <div className="flex gap-4 bg-white w-[460px] group rounded-full relative">
+          <div className="flex gap-4 bg-white w-[460px] group rounded-full relative mt-10">
             <input
               type="text"
               placeholder="Where are you going?"
@@ -37,7 +37,7 @@ function Hero({}: Props) {
             </div>
           </div>
         </div>
-        <div className="grid grid-areas-hero-image gap-5">
+        <div className="grid grid-areas-hero-image gap-5 w-fit">
           <div className="grid-in-one ">
             <Image
               className="rounded-lg"
