@@ -1,4 +1,5 @@
 import CharmingCities from "@/components/home/CharmingCities";
+import GetInspired from "@/components/home/GetInspired";
 import Hero from "@/components/home/Hero";
 import WhyBook from "@/components/home/WhyBook";
 import Header from "@/components/nav/Header";
@@ -14,6 +15,7 @@ export default function Home() {
       <CharmingCities />
 
       <WhyBook />
+      <GetInspired />
     </main>
   );
 }
