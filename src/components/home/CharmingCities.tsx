@@ -129,7 +129,7 @@ function CharmingCities() {
           ))}
 
           <div className="flex justify-between mt-5">
-            <button className="inline-flex items-center font-semibold text-sm bg-biscuit text-magenta rounded-lg px-3 ">
+            <button className="inline-flex items-center font-semibold text-sm bg-biscuit text-magenta rounded-lg px-3 hover:bg-magenta hover:text-white">
               View all Cites <ChevronRightIcon className="w-4 h-4" />
             </button>
             <div className="inline-flex gap-2">
