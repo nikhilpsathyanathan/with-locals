@@ -87,7 +87,7 @@ function CharmingCities() {
         >
           {SLIDER_DATA.map((destination) => (
             <SwiperSlide key={destination.location}>
-              <div className=" bg-biscuit rounded-lg overflow-hidden">
+              <div className=" bg-biscuit rounded-lg overflow-hidden transform translate-y-1 hover:translate-y-0 duration-200 ease-in-out">
                 <div className="relative h-72 w-ful ">
                   <Image
                     src={destination.image}
