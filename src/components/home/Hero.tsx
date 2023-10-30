@@ -8,13 +8,27 @@ import Image from "next/image";
 
 type Props = {};
 
+const SLIDER_DATA = [
+  {
+    name: "Marrakech",
+    images: {
+      0: "https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-0",
+      1: "https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-1",
+      2: "https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_184,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-2",
+      3: "https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-3",
+      4: "https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-4",
+    },
+  },
+];
+
 function Hero({}: Props) {
+  const data = SLIDER_DATA[0];
   return (
     <div className=" relative">
       <div className="absolute h-28 w-full bottom-0 bg-white"></div>
 
       <div className="grid grid-cols-2 gap-5 relative container  mx-auto">
-        <div>
+        <div className="px-5">
           <h1 className="text-magenta-dark text-[40px] font-bold leading-[48px] mt-16">
             Enchanting experiences,
             <br /> with <span className="text-magenta">incredible locals</span>
@@ -41,7 +55,7 @@ function Hero({}: Props) {
           <div className="grid-in-one ">
             <Image
               className="rounded-lg"
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-0"
+              src={data.images[0]}
               width={184}
               height={285}
               alt={""}
@@ -50,7 +64,7 @@ function Hero({}: Props) {
           <div className="grid-in-two ">
             <Image
               className="rounded-lg"
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-1"
+              src={data.images[1]}
               width={184}
               height={285}
               alt={""}
@@ -59,7 +73,7 @@ function Hero({}: Props) {
           <div className="grid-in-three ">
             <Image
               className="rounded-lg"
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_184,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-2"
+              src={data.images[2]}
               width={184}
               height={184}
               alt={""}
@@ -68,7 +82,7 @@ function Hero({}: Props) {
           <div className="grid-in-four ">
             <Image
               className="rounded-lg"
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-3"
+              src={data.images[3]}
               alt={""}
               width={184}
               height={285}
@@ -77,7 +91,7 @@ function Hero({}: Props) {
           <div className="grid-in-five ">
             <Image
               className="rounded-lg"
-              src="https://withlocals-com-res.cloudinary.com/image/upload/c_fill,f_auto,g_faces,q_auto,w_184,h_285,dpr_1.0/website/homepage/image-grid/marrakech/marrakech-4"
+              src={data.images[4]}
               width={184}
               height={285}
               alt={""}
@@ -88,7 +102,7 @@ function Hero({}: Props) {
               <ChevronLeftIcon className="w-6 h-6" />
               <div className="inline-flex items-center group justify-center flex-1 text-center h-full gap-1 rounded font-medium hover:bg-green-dark hover:text-white">
                 <MapPinIcon className="w-5 h-5 fill-green group-hover:fill-white" />
-                <div>Marrakech</div>
+                <div>{data.name}</div>
               </div>
               <ChevronRightIcon className="w-6 h-6" />
             </div>
