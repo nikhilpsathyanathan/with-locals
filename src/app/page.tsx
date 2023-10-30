@@ -1,5 +1,6 @@
 import CharmingCities from "@/components/home/CharmingCities";
 import Hero from "@/components/home/Hero";
+import WhyBook from "@/components/home/WhyBook";
 import Header from "@/components/nav/Header";
 import "swiper/css";
 
@@ -12,7 +13,7 @@ export default function Home() {
       </div>
       <CharmingCities />
 
-      <div></div>
+      <WhyBook />
     </main>
   );
 }
