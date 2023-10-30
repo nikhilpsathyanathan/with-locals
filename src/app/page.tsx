@@ -1,4 +1,5 @@
 import CharmingCities from "@/components/home/CharmingCities";
+import FiveFoodDestinations from "@/components/home/FiveFoodDestinations";
 import GetInspired from "@/components/home/GetInspired";
 import Hero from "@/components/home/Hero";
 import ImpactReport from "@/components/home/ImpactReport";
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyBook />
       <GetInspired />
       <ImpactReport />
+      <FiveFoodDestinations />
     </main>
   );
 }
