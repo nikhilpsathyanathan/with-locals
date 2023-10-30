@@ -4,6 +4,7 @@ import FiveFoodDestinations from "@/components/home/FiveFoodDestinations";
 import GetInspired from "@/components/home/GetInspired";
 import Hero from "@/components/home/Hero";
 import ImpactReport from "@/components/home/ImpactReport";
+import TopKidsDestinations from "@/components/home/TopKidsDestinations";
 import WhyBook from "@/components/home/WhyBook";
 import Header from "@/components/nav/Header";
 import "swiper/css";
@@ -22,6 +23,8 @@ export default function Home() {
       <ImpactReport />
       <FiveFoodDestinations />
       <FindYourOwnLocal />
+      <TopKidsDestinations />
+      <div className="h-10 bg-white"></div>
     </main>
   );
 }
