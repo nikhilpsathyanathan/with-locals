@@ -1,4 +1,5 @@
 import CharmingCities from "@/components/home/CharmingCities";
+import FindYourOwnLocal from "@/components/home/FindYourOwnLocal";
 import FiveFoodDestinations from "@/components/home/FiveFoodDestinations";
 import GetInspired from "@/components/home/GetInspired";
 import Hero from "@/components/home/Hero";
@@ -20,6 +21,7 @@ export default function Home() {
       <GetInspired />
       <ImpactReport />
       <FiveFoodDestinations />
+      <FindYourOwnLocal />
     </main>
   );
 }

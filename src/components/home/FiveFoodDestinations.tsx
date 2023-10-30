@@ -68,7 +68,7 @@ function FiveFoodDestinations() {
         </button>
       </div>
 
-      <div className="grid grid-cols-3 grid-rows-2 gap-5 overflow-clip">
+      <div className="grid grid-cols-3 grid-rows-2 gap-5">
         <div className=" col-span-2 grid grid-cols-2 rounded-lg overflow-clip transform translate-y-1 hover:translate-y-0 duration-200 ease-in-out">
           <div className="relative">
             <Image
@@ -109,7 +109,7 @@ function FiveFoodDestinations() {
         {DATA.map((data) => (
           <div
             key={data.name}
-            className=" bg-biscuit rounded-lg overflow-hidden transform translate-y-1 hover:translate-y-0 duration-200 ease-in-out"
+            className=" bg-biscuit rounded-lg overflow-hidden transform translate-y-1 hover:translate-y-0 duration-200 ease-in-out mb-1"
           >
             <div className=" h-48 w-full relative">
               <Image
