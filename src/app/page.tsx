@@ -1,6 +1,7 @@
 import CharmingCities from "@/components/home/CharmingCities";
 import GetInspired from "@/components/home/GetInspired";
 import Hero from "@/components/home/Hero";
+import ImpactReport from "@/components/home/ImpactReport";
 import WhyBook from "@/components/home/WhyBook";
 import Header from "@/components/nav/Header";
 import "swiper/css";
@@ -16,6 +17,7 @@ export default function Home() {
 
       <WhyBook />
       <GetInspired />
+      <ImpactReport />
     </main>
   );
 }
